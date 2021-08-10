@@ -62,6 +62,13 @@ void main(void) {
         PORTB = I2C_Master_Read(0);             
         I2C_Master_Stop();
         __delay_ms(200);
+        
+        //Obtener informacion del segundo slave
+        I2C_Master_Start();
+        I2C_Master_Write(0x61);                 // 51, se escribe el 1 para que lea en el puerto de leds
+        PORTA = I2C_Master_Read(0);             
+        I2C_Master_Stop();
+        __delay_ms(200);
        //Obtener informacion del sensor de temperatura
         //Direccion 0x90 porque A0 A1 y A2 estan a tierra
         I2C_Master_Start();
@@ -85,7 +92,9 @@ void setup(void){
     
     ANSEL = 0;
     ANSELH = 0;
+    TRISA = 0;
     TRISB = 0;
+    PORTA = 0;
     PORTB = 0;
     TRISD = 0;
     
