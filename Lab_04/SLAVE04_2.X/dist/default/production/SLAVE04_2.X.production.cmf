@@ -21,7 +21,7 @@ cstackCOMMON COMMON 1 70 70 4 1
 intentry CODE 0 4 4 8 2
 bssCOMMON COMMON 1 74 74 1 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\diego\AppData\Local\Temp\s818.o
+$C:\Users\diego\AppData\Local\Temp\s6is.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -71,12 +71,12 @@ STRING D9-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\SLAVE04_2.X.production.o
-F cinit CODE >657:C:\Users\diego\AppData\Local\Temp\s818.s
-F cinit CODE >660:C:\Users\diego\AppData\Local\Temp\s818.s
-F cinit CODE >671:C:\Users\diego\AppData\Local\Temp\s818.s
-10 cinit CODE >677:C:\Users\diego\AppData\Local\Temp\s818.s
-10 cinit CODE >679:C:\Users\diego\AppData\Local\Temp\s818.s
-11 cinit CODE >680:C:\Users\diego\AppData\Local\Temp\s818.s
+F cinit CODE >657:C:\Users\diego\AppData\Local\Temp\s6is.s
+F cinit CODE >660:C:\Users\diego\AppData\Local\Temp\s6is.s
+F cinit CODE >671:C:\Users\diego\AppData\Local\Temp\s6is.s
+10 cinit CODE >677:C:\Users\diego\AppData\Local\Temp\s6is.s
+10 cinit CODE >679:C:\Users\diego\AppData\Local\Temp\s6is.s
+11 cinit CODE >680:C:\Users\diego\AppData\Local\Temp\s6is.s
 4 intentry CODE >44:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
 14 text3 CODE >44:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
 14 text3 CODE >46:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
@@ -121,37 +121,37 @@ C8 text2 CODE >102:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs
 C9 text2 CODE >103:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\I2C.c
 CC text2 CODE >104:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\I2C.c
 CF text2 CODE >105:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\I2C.c
-8C text1 CODE >108:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-8C text1 CODE >110:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-8F text1 CODE >111:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-90 text1 CODE >112:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-91 text1 CODE >113:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-92 text1 CODE >116:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-95 text1 CODE >117:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-96 text1 CODE >120:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-99 text1 CODE >121:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-9A text1 CODE >122:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-9B text1 CODE >123:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-9C text1 CODE >124:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-9D text1 CODE >125:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-9E text1 CODE >128:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-A1 text1 CODE >129:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-A2 text1 CODE >130:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-A3 text1 CODE >131:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-A4 text1 CODE >132:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-A5 text1 CODE >135:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-A8 text1 CODE >136:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-AA text1 CODE >137:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-AB text1 CODE >138:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-AC text1 CODE >141:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-AD text1 CODE >142:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-AE text1 CODE >143:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-AF text1 CODE >146:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-B5 text1 CODE >147:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+8C text1 CODE >104:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+8C text1 CODE >106:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+8F text1 CODE >107:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+90 text1 CODE >108:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+91 text1 CODE >109:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+92 text1 CODE >112:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+95 text1 CODE >113:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+96 text1 CODE >116:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+99 text1 CODE >117:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+9A text1 CODE >118:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+9B text1 CODE >119:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+9C text1 CODE >120:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+9D text1 CODE >121:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+9E text1 CODE >124:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+A1 text1 CODE >125:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+A2 text1 CODE >126:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+A3 text1 CODE >127:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+A4 text1 CODE >128:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+A5 text1 CODE >131:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+A8 text1 CODE >132:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+AA text1 CODE >133:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+AB text1 CODE >134:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+AC text1 CODE >137:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+AD text1 CODE >138:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+AE text1 CODE >139:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+AF text1 CODE >142:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+B5 text1 CODE >143:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
 D0 maintext CODE >91:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
 D0 maintext CODE >93:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
 D5 maintext CODE >96:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
-D5 maintext CODE >103:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
+D5 maintext CODE >99:C:\Users\diego\OneDrive\Escritorio\UVG\DIGITAL\DIGITAL 2\Labs-Digital-2\Lab_04\SLAVE04_2.X\main_slave2.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -177,20 +177,20 @@ __Hstrings 0 0 ABS 0 strings -
 _PEIE 5E 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 _RBIF 58 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 _WPUB 95 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\diego\AppData\Local\Temp\s818.o
+___sp 0 0 STACK 2 stack C:\Users\diego\AppData\Local\Temp\s6is.o
 _main 1A0 0 CODE 0 maintext dist/default/production\SLAVE04_2.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
-start 18 0 CODE 0 init C:\Users\diego\AppData\Local\Temp\s818.o
+start 18 0 CODE 0 init C:\Users\diego\AppData\Local\Temp\s6is.o
 __size_of_main 0 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s818.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s818.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s818.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s818.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s818.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s818.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s6is.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s6is.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s6is.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s6is.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s6is.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\s6is.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
@@ -199,8 +199,8 @@ __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 _SSPCONbits 14 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\diego\AppData\Local\Temp\s818.o
-___stacklo 0 0 ABS 0 - C:\Users\diego\AppData\Local\Temp\s818.o
+___stackhi 0 0 ABS 0 - C:\Users\diego\AppData\Local\Temp\s6is.o
+___stacklo 0 0 ABS 0 - C:\Users\diego\AppData\Local\Temp\s6is.o
 _I2C_Slave_Init 16C 0 CODE 0 text2 dist/default/production\SLAVE04_2.X.production.o
 __size_of_setup 0 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 start_initialization 1E 0 CODE 0 cinit dist/default/production\SLAVE04_2.X.production.o
@@ -211,7 +211,7 @@ _SSPBUF 13 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\diego\AppData\Local\Temp\s818.o
+___int_sp 0 0 STACK 2 stack C:\Users\diego\AppData\Local\Temp\s6is.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -256,7 +256,7 @@ _isr 28 0 CODE 0 text3 dist/default/production\SLAVE04_2.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\SLAVE04_2.X.production.o
 __end_of_isr 118 0 CODE 0 text3 dist/default/production\SLAVE04_2.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\diego\AppData\Local\Temp\s818.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\diego\AppData\Local\Temp\s6is.o
 __pmaintext 1A0 0 CODE 0 maintext dist/default/production\SLAVE04_2.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -

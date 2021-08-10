@@ -623,98 +623,98 @@ Version 4.0 HI-TECH Software Intermediate Code
 "97
 [; ;main_slave2.c: 97:     {
 {
-"103
-[; ;main_slave2.c: 103:     }
+"99
+[; ;main_slave2.c: 99:     }
 }
 [e :U 155 ]
 [e $U 156  ]
 [e :U 157 ]
-"104
-[; ;main_slave2.c: 104: }
+"100
+[; ;main_slave2.c: 100: }
 [e :UE 154 ]
 }
-"108
-[; ;main_slave2.c: 108: void setup(void){
+"104
+[; ;main_slave2.c: 104: void setup(void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"110
-[; ;main_slave2.c: 110:     OSCCONbits.IRCF2 = 0;
+"106
+[; ;main_slave2.c: 106:     OSCCONbits.IRCF2 = 0;
 [e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
-"111
-[; ;main_slave2.c: 111:     OSCCONbits.IRCF1 = 1;
+"107
+[; ;main_slave2.c: 107:     OSCCONbits.IRCF1 = 1;
 [e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
-"112
-[; ;main_slave2.c: 112:     OSCCONbits.IRCF0 = 0;
+"108
+[; ;main_slave2.c: 108:     OSCCONbits.IRCF0 = 0;
 [e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
-"113
-[; ;main_slave2.c: 113:     OSCCONbits.SCS = 1;
+"109
+[; ;main_slave2.c: 109:     OSCCONbits.SCS = 1;
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-"116
-[; ;main_slave2.c: 116:     ANSEL = 0x00;
+"112
+[; ;main_slave2.c: 112:     ANSEL = 0x00;
 [e = _ANSEL -> -> 0 `i `uc ]
-"117
-[; ;main_slave2.c: 117:     ANSELH = 0x00;
+"113
+[; ;main_slave2.c: 113:     ANSELH = 0x00;
 [e = _ANSELH -> -> 0 `i `uc ]
-"120
-[; ;main_slave2.c: 120:     TRISA = 0x00;
+"116
+[; ;main_slave2.c: 116:     TRISA = 0x00;
 [e = _TRISA -> -> 0 `i `uc ]
-"121
-[; ;main_slave2.c: 121:     TRISBbits.TRISB0 = 1;
+"117
+[; ;main_slave2.c: 117:     TRISBbits.TRISB0 = 1;
 [e = . . _TRISBbits 0 0 -> -> 1 `i `uc ]
-"122
-[; ;main_slave2.c: 122:     TRISBbits.TRISB1 = 1;
+"118
+[; ;main_slave2.c: 118:     TRISBbits.TRISB1 = 1;
 [e = . . _TRISBbits 0 1 -> -> 1 `i `uc ]
-"123
-[; ;main_slave2.c: 123:     TRISC = 0x00;
+"119
+[; ;main_slave2.c: 119:     TRISC = 0x00;
 [e = _TRISC -> -> 0 `i `uc ]
-"124
-[; ;main_slave2.c: 124:     TRISD = 0x00;
+"120
+[; ;main_slave2.c: 120:     TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"125
-[; ;main_slave2.c: 125:     TRISE = 0X00;
+"121
+[; ;main_slave2.c: 121:     TRISE = 0X00;
 [e = _TRISE -> -> 0 `i `uc ]
-"128
-[; ;main_slave2.c: 128:     PORTA = 0x00;
+"124
+[; ;main_slave2.c: 124:     PORTA = 0x00;
 [e = _PORTA -> -> 0 `i `uc ]
-"129
-[; ;main_slave2.c: 129:     PORTB = 0x00;
+"125
+[; ;main_slave2.c: 125:     PORTB = 0x00;
 [e = _PORTB -> -> 0 `i `uc ]
-"130
-[; ;main_slave2.c: 130:     PORTC = 0x00;
+"126
+[; ;main_slave2.c: 126:     PORTC = 0x00;
 [e = _PORTC -> -> 0 `i `uc ]
-"131
-[; ;main_slave2.c: 131:     PORTD = 0x00;
+"127
+[; ;main_slave2.c: 127:     PORTD = 0x00;
 [e = _PORTD -> -> 0 `i `uc ]
-"132
-[; ;main_slave2.c: 132:     PORTE = 0x00;
+"128
+[; ;main_slave2.c: 128:     PORTE = 0x00;
 [e = _PORTE -> -> 0 `i `uc ]
-"135
-[; ;main_slave2.c: 135:     OPTION_REGbits.nRBPU = 0;
+"131
+[; ;main_slave2.c: 131:     OPTION_REGbits.nRBPU = 0;
 [e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
-"136
-[; ;main_slave2.c: 136:     WPUB = 0b00000011;
+"132
+[; ;main_slave2.c: 132:     WPUB = 0b00000011;
 [e = _WPUB -> -> 3 `i `uc ]
-"137
-[; ;main_slave2.c: 137:     IOCBbits.IOCB0 = 1;
+"133
+[; ;main_slave2.c: 133:     IOCBbits.IOCB0 = 1;
 [e = . . _IOCBbits 1 0 -> -> 1 `i `uc ]
-"138
-[; ;main_slave2.c: 138:     IOCBbits.IOCB1 = 1;
+"134
+[; ;main_slave2.c: 134:     IOCBbits.IOCB1 = 1;
 [e = . . _IOCBbits 1 1 -> -> 1 `i `uc ]
-"141
-[; ;main_slave2.c: 141:     INTCONbits.GIE = 1;
+"137
+[; ;main_slave2.c: 137:     INTCONbits.GIE = 1;
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"142
-[; ;main_slave2.c: 142:     INTCONbits.RBIF = 1;
+"138
+[; ;main_slave2.c: 138:     INTCONbits.RBIF = 1;
 [e = . . _INTCONbits 0 0 -> -> 1 `i `uc ]
-"143
-[; ;main_slave2.c: 143:     INTCONbits.RBIE = 1;
+"139
+[; ;main_slave2.c: 139:     INTCONbits.RBIE = 1;
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"146
-[; ;main_slave2.c: 146:     I2C_Slave_Init(0x60);
+"142
+[; ;main_slave2.c: 142:     I2C_Slave_Init(0x60);
 [e ( _I2C_Slave_Init (1 -> -> 96 `i `uc ]
-"147
-[; ;main_slave2.c: 147: }
+"143
+[; ;main_slave2.c: 143: }
 [e :UE 158 ]
 }

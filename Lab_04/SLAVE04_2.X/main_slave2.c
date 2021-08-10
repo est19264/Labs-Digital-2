@@ -95,11 +95,7 @@ void main(void) {
     
     while(1)                                
     {
-//        if(ADCON0bits.GO == 0){
-//            __delay_ms(100);
-//            ADCON0bits.GO = 1;
-//            
-//             }
+
     }
 }
 

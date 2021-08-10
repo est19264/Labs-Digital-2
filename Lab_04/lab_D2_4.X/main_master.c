@@ -16,7 +16,7 @@
 
 // Librerias propias
 #include "I2C.h"
-
+#include "LCD.h"                            // Libreria para el LCD
 
 //-------------------------- Bits de configuraciÓn -----------------------------
 // CONFIG1
@@ -35,8 +35,24 @@
 #pragma config BOR4V = BOR40V                   // Brown-out Reset Selection bit (Brown-out Reset set to 4.0V)
 #pragma config WRT = OFF                        // Flash Program Memory Self Write Enable bits (Write protection off)
 
+#define RS RE0
+#define EN RE2
+#define D0 RD0
+#define D1 RD1
+#define D2 RD2
+#define D3 RD3
+#define D4 RD4
+#define D5 RD5
+#define D6 RD6
+#define D7 RD7
 //--------------------------------- Variables ----------------------------------
 int full;
+char temp;
+char vol;
+char cont;
+char val;
+char val1;
+char val2;
 
 //-------------------------------- Prototipos ----------------------------------
 void setup(void);
@@ -51,11 +67,28 @@ void __interrupt() isr(void)
 void main(void) {
     
     setup();                                    // Llama a la configuracion principal
-
+    Lcd_Init();                             // LCD esta apagada
+    Lcd_Clear();                            // Se limpia la LCD
+    char buffer[20];                        // Se guarda el voltaje en un string
+//    char buffer1[20];
+//    char buffer2[20];
+    char val2;
+    char val1;
+    char val;                               // Valor que deseo almacenar en un str
+    Lcd_Set_Cursor(1,1);                    // Primera linea en la posicion 1
+    Lcd_Write_String("VOL:  TEMP:  CONT:");      // Se imprimen los indicadores de voltaje
     
     while(1)
     {
-
+        vol = PORTB;
+        cont = PORTA;
+        val = vol*0.0196; 
+        val1 = temp;
+        val2 = cont;
+        sprintf(buffer, "%d     %d      %d", val, val1, val2); 
+        Lcd_Set_Cursor(2,2);                    // Segunda linea
+        Lcd_Write_String(buffer);               // Mostrar el valor del string
+        
         //Obtener informacion del primer slave
         I2C_Master_Start();
         I2C_Master_Write(0x51);                 // 51, se escribe el 1 para que lea en el puerto de leds
@@ -79,10 +112,11 @@ void main(void) {
         
         I2C_Master_Start();
         I2C_Master_Write(0x81);                 // Ahora lee
-        PORTD = I2C_Master_Read(0);             // Read temperature
+        temp = I2C_Master_Read(0);             // Read temperature
         I2C_Master_Stop();
         __delay_ms(200);
 
+        
     }
 }
 
@@ -97,6 +131,7 @@ void setup(void){
     PORTA = 0;
     PORTB = 0;
     TRISD = 0;
+    TRISE = 0;
     
     //limpiar puertos
     PORTA = 0x00;

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Mon Aug 09 20:27:06 2021
+                                                                                               Tue Aug 10 12:31:19 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	16F887
@@ -430,7 +430,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    416                           ;main_slave2.c: 96:     while(1)
    417                           
    418  00D5                     l83:	
-   419                           ;main_slave2.c: 97:     {;main_slave2.c: 103:     }
+   419                           ;main_slave2.c: 97:     {;main_slave2.c: 99:     }
    420                           
    421  00D5  28D5               	goto	l82
    422  00D6  120A  118A  280C   	ljmp	start
@@ -440,7 +440,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    426  008C                     __ptext1:	
    427 ;; *************** function _setup *****************
    428 ;; Defined at:
-   429 ;;		line 108 in file "main_slave2.c"
+   429 ;;		line 104 in file "main_slave2.c"
    430 ;; Parameters:    Size  Location     Type
    431 ;;		None
    432 ;; Auto vars:     Size  Location     Type
@@ -476,101 +476,101 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    462                           ; Regs used in _setup: [wreg+status,2+status,0+pclath+cstack]
    463                           
    464                           
-   465                           ;main_slave2.c: 110:     OSCCONbits.IRCF2 = 0;
+   465                           ;main_slave2.c: 106:     OSCCONbits.IRCF2 = 0;
    466  008C  1683               	bsf	3,5	;RP0=1, select bank1
    467  008D  1303               	bcf	3,6	;RP1=0, select bank1
    468  008E  130F               	bcf	15,6	;volatile
    469                           
-   470                           ;main_slave2.c: 111:     OSCCONbits.IRCF1 = 1;
+   470                           ;main_slave2.c: 107:     OSCCONbits.IRCF1 = 1;
    471  008F  168F               	bsf	15,5	;volatile
    472                           
-   473                           ;main_slave2.c: 112:     OSCCONbits.IRCF0 = 0;
+   473                           ;main_slave2.c: 108:     OSCCONbits.IRCF0 = 0;
    474  0090  120F               	bcf	15,4	;volatile
    475                           
-   476                           ;main_slave2.c: 113:     OSCCONbits.SCS = 1;
+   476                           ;main_slave2.c: 109:     OSCCONbits.SCS = 1;
    477  0091  140F               	bsf	15,0	;volatile
    478  0092                     l751:
    479                           
-   480                           ;main_slave2.c: 116:     ANSEL = 0x00;
+   480                           ;main_slave2.c: 112:     ANSEL = 0x00;
    481  0092  1683               	bsf	3,5	;RP0=1, select bank3
    482  0093  1703               	bsf	3,6	;RP1=1, select bank3
    483  0094  0188               	clrf	8	;volatile
    484                           
-   485                           ;main_slave2.c: 117:     ANSELH = 0x00;
+   485                           ;main_slave2.c: 113:     ANSELH = 0x00;
    486  0095  0189               	clrf	9	;volatile
    487                           
-   488                           ;main_slave2.c: 120:     TRISA = 0x00;
+   488                           ;main_slave2.c: 116:     TRISA = 0x00;
    489  0096  1683               	bsf	3,5	;RP0=1, select bank1
    490  0097  1303               	bcf	3,6	;RP1=0, select bank1
    491  0098  0185               	clrf	5	;volatile
    492  0099                     l753:
    493                           
-   494                           ;main_slave2.c: 121:     TRISBbits.TRISB0 = 1;
+   494                           ;main_slave2.c: 117:     TRISBbits.TRISB0 = 1;
    495  0099  1406               	bsf	6,0	;volatile
    496  009A                     l755:
    497                           
-   498                           ;main_slave2.c: 122:     TRISBbits.TRISB1 = 1;
+   498                           ;main_slave2.c: 118:     TRISBbits.TRISB1 = 1;
    499  009A  1486               	bsf	6,1	;volatile
    500                           
-   501                           ;main_slave2.c: 123:     TRISC = 0x00;
+   501                           ;main_slave2.c: 119:     TRISC = 0x00;
    502  009B  0187               	clrf	7	;volatile
    503                           
-   504                           ;main_slave2.c: 124:     TRISD = 0x00;
+   504                           ;main_slave2.c: 120:     TRISD = 0x00;
    505  009C  0188               	clrf	8	;volatile
    506                           
-   507                           ;main_slave2.c: 125:     TRISE = 0X00;
+   507                           ;main_slave2.c: 121:     TRISE = 0X00;
    508  009D  0189               	clrf	9	;volatile
    509                           
-   510                           ;main_slave2.c: 128:     PORTA = 0x00;
+   510                           ;main_slave2.c: 124:     PORTA = 0x00;
    511  009E  1283               	bcf	3,5	;RP0=0, select bank0
    512  009F  1303               	bcf	3,6	;RP1=0, select bank0
    513  00A0  0185               	clrf	5	;volatile
    514                           
-   515                           ;main_slave2.c: 129:     PORTB = 0x00;
+   515                           ;main_slave2.c: 125:     PORTB = 0x00;
    516  00A1  0186               	clrf	6	;volatile
    517                           
-   518                           ;main_slave2.c: 130:     PORTC = 0x00;
+   518                           ;main_slave2.c: 126:     PORTC = 0x00;
    519  00A2  0187               	clrf	7	;volatile
    520                           
-   521                           ;main_slave2.c: 131:     PORTD = 0x00;
+   521                           ;main_slave2.c: 127:     PORTD = 0x00;
    522  00A3  0188               	clrf	8	;volatile
    523                           
-   524                           ;main_slave2.c: 132:     PORTE = 0x00;
+   524                           ;main_slave2.c: 128:     PORTE = 0x00;
    525  00A4  0189               	clrf	9	;volatile
    526  00A5                     l757:
    527                           
-   528                           ;main_slave2.c: 135:     OPTION_REGbits.nRBPU = 0;
+   528                           ;main_slave2.c: 131:     OPTION_REGbits.nRBPU = 0;
    529  00A5  1683               	bsf	3,5	;RP0=1, select bank1
    530  00A6  1303               	bcf	3,6	;RP1=0, select bank1
    531  00A7  1381               	bcf	1,7	;volatile
    532  00A8                     l759:
    533                           
-   534                           ;main_slave2.c: 136:     WPUB = 0b00000011;
+   534                           ;main_slave2.c: 132:     WPUB = 0b00000011;
    535  00A8  3003               	movlw	3
    536  00A9  0095               	movwf	21	;volatile
    537  00AA                     l761:
    538                           
-   539                           ;main_slave2.c: 137:     IOCBbits.IOCB0 = 1;
+   539                           ;main_slave2.c: 133:     IOCBbits.IOCB0 = 1;
    540  00AA  1416               	bsf	22,0	;volatile
    541  00AB                     l763:
    542                           
-   543                           ;main_slave2.c: 138:     IOCBbits.IOCB1 = 1;
+   543                           ;main_slave2.c: 134:     IOCBbits.IOCB1 = 1;
    544  00AB  1496               	bsf	22,1	;volatile
    545  00AC                     l765:
    546                           
-   547                           ;main_slave2.c: 141:     INTCONbits.GIE = 1;
+   547                           ;main_slave2.c: 137:     INTCONbits.GIE = 1;
    548  00AC  178B               	bsf	11,7	;volatile
    549  00AD                     l767:
    550                           
-   551                           ;main_slave2.c: 142:     INTCONbits.RBIF = 1;
+   551                           ;main_slave2.c: 138:     INTCONbits.RBIF = 1;
    552  00AD  140B               	bsf	11,0	;volatile
    553  00AE                     l769:
    554                           
-   555                           ;main_slave2.c: 143:     INTCONbits.RBIE = 1;
+   555                           ;main_slave2.c: 139:     INTCONbits.RBIE = 1;
    556  00AE  158B               	bsf	11,3	;volatile
    557  00AF                     l771:
    558                           
-   559                           ;main_slave2.c: 146:     I2C_Slave_Init(0x60);
+   559                           ;main_slave2.c: 142:     I2C_Slave_Init(0x60);
    560  00AF  3060               	movlw	96
    561  00B0  120A  118A  20B6  120A  118A  	fcall	_I2C_Slave_Init
    562  00B5                     l88:
@@ -1113,7 +1113,7 @@ DATA                 0      0       5      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Mon Aug 09 20:27:06 2021
+Symbol Table                                                                                   Tue Aug 10 12:31:19 2021
 
                       _z 0074              _SSPSTATbits 0094                       _BF 04A0  
                      l82 00D5                       l83 00D5                       l88 00B5  
