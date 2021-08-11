@@ -67,16 +67,14 @@ void __interrupt() isr(void)
 void main(void) {
     
     setup();                                    // Llama a la configuracion principal
-    Lcd_Init();                             // LCD esta apagada
-    Lcd_Clear();                            // Se limpia la LCD
-    char buffer[20];                        // Se guarda el voltaje en un string
-//    char buffer1[20];
-//    char buffer2[20];
+    Lcd_Init();                                 // LCD esta apagada
+    Lcd_Clear();                                // Se limpia la LCD
+    char buffer[20];                            // Se guarda el voltaje en un string
     char val2;
     char val1;
-    char val;                               // Valor que deseo almacenar en un str
-    Lcd_Set_Cursor(1,1);                    // Primera linea en la posicion 1
-    Lcd_Write_String("VOL:  TEMP:  CONT:");      // Se imprimen los indicadores de voltaje
+    char val;                                   // Valor que deseo almacenar en un str
+    Lcd_Set_Cursor(1,1);                        // Primera linea en la posicion 1
+    Lcd_Write_String("VOL:  TEMP:  CONT:");     // Se imprimen los indicadores de voltaje
     
     while(1)
     {
@@ -112,7 +110,7 @@ void main(void) {
         
         I2C_Master_Start();
         I2C_Master_Write(0x81);                 // Ahora lee
-        temp = I2C_Master_Read(0);             // Read temperature
+        temp = I2C_Master_Read(0);              // Read temperature
         I2C_Master_Stop();
         __delay_ms(200);
 
